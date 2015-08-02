@@ -1,13 +1,15 @@
 package org.github.jane829.distanceLevel.impl;
 
 import org.github.jane829.distanceLevel.DistanceLevel;
+import org.springframework.stereotype.Component;
 
+@Component
 public class DistanceMoreThanTwoAndLessThanEightKilometersLevel extends DistanceLevel
 {
     @Override
     public boolean check_distance_level(float distance)
     {
-        return distance <= 8;
+        return distance <= 8 && distance > 2;
     }
 
     @Override

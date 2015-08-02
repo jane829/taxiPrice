@@ -1,7 +1,9 @@
 package org.github.jane829.distanceLevel.impl;
 
 import org.github.jane829.distanceLevel.DistanceLevel;
+import org.springframework.stereotype.Component;
 
+@Component
 public class DistanceNotMoreThanTwoKilometersLevel extends DistanceLevel
 {
     private static final float PRICE_FOR_LESS_THAN_TWO_KILOMETER = 6f;

@@ -1,7 +1,9 @@
 package org.github.jane829.distanceLevel.impl;
 
 import org.github.jane829.distanceLevel.DistanceLevel;
+import org.springframework.stereotype.Component;
 
+@Component
 public class DistanceNotMoreThanZeroLevel extends DistanceLevel
 {
     @Override
